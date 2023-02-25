@@ -7,7 +7,7 @@ type TDeck = {
 }
 
 function App() {
-  const [decks, setDecks] = useState([])
+  const [decks, setDecks] = useState<TDeck[]>([])
   const [title, setTitle] = useState('')
 
   async function handleCreateDeck(e: React.FormEvent) {
